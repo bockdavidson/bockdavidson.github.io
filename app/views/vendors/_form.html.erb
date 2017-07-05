@@ -1,0 +1,102 @@
+<%= form_for @vendor do |f| %>
+ 
+  <% if @vendor.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@vendor.errors.count, "error") %> prohibited
+        this vendor from being saved:
+      </h2>
+      <ul>
+        <% @vendor.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+<aside>
+  
+
+
+<div class = "vendor_border" >
+  
+  <div class = "v">
+    
+
+  <ul>
+    <%= f.label :company %><br>
+    <%= f.text_field :company %>
+  </ul>
+  
+  <ul> 
+    <%= f.label :contact_name %><br>
+    <%= f.text_field :contact_name %>
+  </ul>
+  
+  <ul>
+    <%= f.label :phone %><br>
+    <%= f.text_field :phone %>
+  </ul>
+  
+  <ul>
+    <%= f.label :email %><br>
+    <%= f.text_field :email %> 
+  </ul>
+  
+  <ul>
+    <%= f.label :moq %><br>
+    <%= f.text_field :moq %>
+  </ul>
+  
+  <ul>
+    <%= f.label :cost_per_item %><br>
+    <%= f.text_field :cost_per_item, class: "cos" %>
+  </ul>
+  
+  <ul>
+    <%= f.label :payment_method %><br>
+    <%= f.text_field :payment_method %>
+  </ul>
+  
+  <ul>
+    <%= f.label :terms %><br>
+    <%= f.text_field :terms %>
+  </ul>
+  
+  <ul>
+    <%= f.label :turnover %><br>
+    <%= f.text_field :turnover %>
+  </ul>
+  
+  <ul>
+        <%= f.label :returns %><br>
+        <%= f.text_field :returns %>
+ </ul>
+ 
+ <form>
+
+    <ul>
+         <%= f.label :notes %><br>
+         <%= f.text_area :notes, class: "large-box" %>
+    </ul>
+
+
+ </form>
+ 
+  
+   
+  <ul>
+    <%= f.submit %>
+  </ul>
+  <div class = "back" >
+    <%= link_to 'Back', vendors_path %>
+  </div>
+  </div>
+  
+  
+  
+</div>  
+  
+<% end %>
+
+</aside>

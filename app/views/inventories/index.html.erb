@@ -1,0 +1,74 @@
+<body>
+    <div class = "head1">
+        <h1>Inventory</h1>
+        
+        <div class = "image1" >
+            <img src= "http://dx.deucex.com/i/logo.png" >
+        </div>
+    </div>
+    
+</body>
+
+<table>
+    <tr>
+        
+        <% if user_signed_in? %>
+            <%= button_to "New Inventory", new_inventory_path, :method => "get" %>
+            <% end %>
+
+            
+        <%= button_to "Vendor List", vendors_path, :method => "get" %>
+        
+        <%= form_tag inventories_path, :method => "get" do %>
+                <%= text_field_tag :search, params[:search] %>
+                <%= submit_tag "Search", :search_terms => nil %>
+        <% end %>
+        <div class = "pag1" >
+            <%= will_paginate @inventories %>
+        </div>
+    </tr>
+
+</table>
+
+<table class = "invent">
+    
+
+        
+    <tr>
+        <th>Status</th>
+        <th>UPC Code</th>
+        <th>Product Name</th>
+        <th>Quantity</th>
+        <th>Size</th>
+        <th>SKU</th>
+        <th>Cost Price</th>
+        <th>Sell Price</th>
+    </tr>
+    
+
+    <% for inventory in @inventories %>
+    <tr class = "inventorylist">
+        <td><%= inventory.status %></td>
+        <td><%= inventory.upc_code %></td>
+        <td><%= inventory.product_name %></td>
+        <td><%= inventory.quantity %></td>
+        <td><%= inventory.size %></td>
+        <td><%= inventory.sku %></td>
+        <td><%= inventory.cost_price %></td>
+        <td><%= inventory.sell_price %></td>
+        
+        <% if user_signed_in? %>
+        <td><%= button_to 'Show', inventory_path(inventory), :method => "get" %></td>
+        <td><%= button_to "Edit", edit_inventory_path(inventory), :method => "get" %></td>
+        <td><%= button_to 'Delete', 
+                                inventory_path(inventory),
+                                method: :delete, 
+                                data: { confirm: 'Are you sure?'} %></td>
+                                
+    <% end %>
+    </tr>
+    <% end %>
+        
+
+
+</table>

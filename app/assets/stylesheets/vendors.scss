@@ -1,0 +1,357 @@
+// Place all the styles related to the Vendors controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body
+{
+    background: #e6f2ff;
+}
+
+input[type=text]{
+    width: 40%;
+    padding: 12px 12px;
+    border: 2px solid #ccc;
+    background-color: white;
+}
+
+
+.large-box textarea {
+    width: 90%;
+    height: 90px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 12px;
+    resize: none;
+    
+    
+}
+
+h1{
+    background-color: #ccccff;
+    width: 400px;
+    height: 50px;
+    border: 7px solid #333333;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-left: 5px;
+    margin-top: 30px;
+    border-style: double;
+}
+
+.vend2{
+    background-color: white;
+    width: 1800px;
+    margin-left: -8px;
+    
+}
+
+
+
+.invent{
+    background-color: white;
+    width: 1800px;
+    margin-left: -8px;
+}
+
+table{
+    width: 800px;
+
+
+}
+
+
+th{
+    background-color: #b3b3cc;
+    border-radius: 4px;
+    border: 2px solid black;
+    width: 365px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+input[type = buttton], input[type = submit], {
+    background-color: #ccddff;
+    border: solid;
+    border-radius: 3px;
+    color: black;
+    padding: 16px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+input[type = buttton]:hover, input[type = submit]:hover, {
+    background-color: blue;
+    border: solid;
+    border-radius: 3px;
+    color: white;
+    padding: 16px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border-color:black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+}
+
+h2{
+    background-color: red;
+    border: none;
+    width: 750px;
+}
+
+.head{
+    display:flex;
+    background-color: #e6e6e6;
+    min-width: 143%
+
+}
+
+.head1{
+    display:flex;
+    background-color: #e6e6e6;
+    min-width: 143%
+}
+
+div.head {
+    border-bottom: 3px outset black;
+    border-top: 30px outset gray;
+    margin-top: -50px;
+    margin-left: -8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-bottom: 60px;
+    
+}
+
+div.head1 {
+    border-bottom: 3px outset black;
+    border-top: 30px outset gray;
+    margin-top: -50px;
+    margin-left: -8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-bottom: 60px;
+}
+
+div.header{
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+
+
+
+div.image1{
+    margin-left: 100px;
+    
+}
+
+
+div.table1{
+
+}
+
+.serch{
+    margin-left: 500px;
+}
+
+.inventory_border{
+    border-top: 3px solid black;
+    max-width: 50%
+}
+
+
+
+
+.field{
+   
+   max-width: 150%;
+   min-height: 200%;
+   margin-left: 10px;
+   text-align: left;
+   font-size: 30px;
+   
+}
+
+
+aside{
+    margin-left: 50px;
+    background-color: light-gray;
+
+}
+
+article.sign{
+    margin-left: 500px;
+    min-width: 30%;
+    min-height: 200%;
+    border: 1px solid gray;
+    background-color: #e6e6e6;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+    
+
+    
+}
+
+.inventorylist td{
+    text-align: center;
+}
+
+.vendorlist td{
+    text-align: center;
+}
+
+.vendorshow td{
+    text-align: left;
+    
+}
+
+.vendorshow{
+    background-color: #e6e6e6;
+    border: 1px solid gray;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 10px;
+}
+
+.inventoryshow td{
+    text-align: left;
+}
+
+.im1{
+    float: left;
+    display: flex;
+    padding-bottom: 30px;
+    margin-top: 100px;
+}
+
+div.nav1{
+    flex: 1;
+    text-align: left;
+    background-color: #e6e6e6;
+    padding-right: 20px;
+    border: 1px solid gray;
+    max-height: 50%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-size: 20px;
+    min-width: 50%;
+    
+}
+
+div.main1{
+
+    padding-left: 20px;
+    background-color: #cccccc;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    min-width: 70%;
+}
+
+div.main2{
+    padding-left: 20px;
+    background-color: #cccccc;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    min-width: 90%;
+    
+}
+ 
+
+
+.invent td{
+    border: 1px solid gray;
+    
+}
+
+
+
+.vend2 td{
+    border: 1px solid gray;
+}
+
+.large-box {
+  width: 90%;
+    height: 90px;
+    padding: 12px 12px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 12px;
+    resize: none;
+
+
+ 
+}
+
+.notes{
+    
+}
+
+.baux{
+    width: 50%;
+    height: 30px !important;
+    padding: 0px;
+    font-size: 20px;
+}
+
+.v{
+    background-color: #e6e6e6;
+    border: 1px solid gray;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.vendor_border{
+    max-width: 80%
+    
+    
+}
+
+.im2{
+
+    max-width: 80%
+    
+}
+
+.nav2{
+    background-color: #e6e6e6;
+    border: 1px solid gray;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+    
+}
+
+.cos{
+    width: 40%;
+}
+
+.back {
+    margin-left: 40px;
+}
+
+.medbox textarea{
+    width: 50%;
+    height: 90px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 12px;
+    resize: none;
+}
+
+.medbox {
+    width: 43%;
+    height: 90px;
+    padding: 12px 12px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 12px;
+    resize: none;
+}

@@ -1,0 +1,9 @@
+<%= form_for([@inventory, @inventory.photos.build]) do |f| %>
+  <div class="form-group">
+    <%= f.label :image %>
+    <%= f.file_field :image, class: 'form-control'%>
+ </div>
+    <p>
+        <%= f.submit 'Upload Photo' %>
+    </p>
+    <% end %>

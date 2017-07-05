@@ -1,0 +1,146 @@
+<%= form_for @inventory do |f| %>
+
+<% if @inventory.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@inventory.errors.count, "error") %> prohibited
+        this vendor from being saved:
+      </h2>
+      <ul>
+        <% @inventory.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<aside>
+    
+
+
+    <div class = "im2">
+        <div class = "nav2">
+            
+            <ul>
+                <%= f.label :product_name %><br>
+                <%= f.text_field :product_name %>
+            </ul>
+            
+            <ul>
+                <%= f.label :brand_name %><br>
+                <%= f.text_field :brand_name %>
+            </ul>
+            
+            <ul>
+                <%= f.label :upc_code %><br>
+                <%= f.text_field :upc_code %>
+            </ul>
+            
+            <ul>
+                <%= f.label :color %><br>
+                <%= f.text_field :color %>
+            </ul>
+            
+            <ul>
+                <%= f.label :department %><br>
+                <%= f.text_field :department %>
+            </ul>
+            
+            <ul>
+                <%= f.label :size %><br>
+                <%= f.text_field :size %>
+                
+            </ul>
+            
+            <ul>
+                <%= f.label :condition %><br>
+                <%= f.text_field :condition %>
+            </ul>
+            
+            <ul>
+                <%= f.label :fabric_type %><br>
+                <%= f.text_field :fabric_type %>
+            </ul>
+            
+            <ul>
+                <%= f.label :shipping_weight %><br>
+                <%= f.text_field :shipping_weight %>
+            </ul>
+            
+            <ul>
+                <%= f.label :sku %><br>
+                <%= f.text_field :sku %>
+            </ul>
+            
+            <ul>
+                <%= f.label :asin %><br>
+                <%= f.text_field :asin %>
+            </ul>
+            
+            <ul>
+                <%= f.label :quantity %><br>
+                <%= f.text_field :quantity %>
+            </ul>
+            
+            <ul>
+                <%= f.label :cost_price %><br>
+                <%= f.text_field :cost_price %>
+            </ul>
+            
+            <ul>
+                <%= f.label :sell_price %><br>
+                <%= f.text_field :sell_price %>
+            </ul>
+            
+            <ul>
+                <%= f.label :key_product_features %><br>
+                <%= f.text_field :key_product_features %>
+            </ul>
+            
+            <ul>
+                <%= f.label :product_description %><br>
+                <%= f.text_area :product_description, class: "medbox" %>
+            </ul>
+            
+            <ul>
+                <%= f.label :search_terms %><br>
+                <%= f.text_field :search_terms %>
+            </ul>
+            
+            <ul>
+                <%= f.label :status %><br>
+                <%= f.text_field :status %>
+            </ul>
+            
+            <ul>
+                <%= f.label :listing_in_usa %><br>
+                <%= f.text_field :listing_in_usa %>
+            </ul>
+            
+            <ul>
+                <%= f.label :listing_in_canada %><br>
+                <%= f.text_field :listing_in_canada %>
+            </ul>
+            
+            <ul>
+                <%= f.label :listing_in_mexico %><br>
+                <%= f.text_field :listing_in_mexico %>
+            </ul>
+            
+            <ul>
+                <%= f.submit %>
+            </ul>
+            
+            <ul>
+                <%= link_to 'Back', inventories_path %>
+            </ul>
+            
+        </div>
+    </div>
+
+
+
+
+<% end %>
+
+</aside>

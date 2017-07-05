@@ -1,0 +1,142 @@
+<body>
+    <div class = "head1">
+        <h1>Inventory Information</h1>
+        
+        <div class = "image1" >
+            <img src= "http://dx.deucex.com/i/logo.png" >
+        </div>
+    </div>
+    
+</body>
+
+
+<aside>
+    <div class = "im1">
+        <div class = "nav1">
+            <ul>
+                <a><strong>Product Name:</strong></a>
+                <a><%= @inventory.product_name %></a>
+                
+            </ul>
+            
+            <ul>
+                <a><strong>Brand Name:</strong></a>
+                <%= @inventory.brand_name %>
+            </ul>
+            
+            <ul>
+                <a><strong>UPC Code:</strong></a>
+                <%= @inventory.upc_code %>
+            </ul>
+            
+            <ul>
+                <a><strong>Color:</strong></a>
+                <%= @inventory.color %>
+            </ul>
+            
+            <ul>
+                <a><strong>Size</strong></a>
+                <%= @inventory.size %>
+            </ul>
+            
+            <ul>
+                <a><strong>Department</strong></a>
+                <%= @inventory.department %>
+            </ul>
+            
+            <ul>
+                <a><strong>Condition:</strong></a>
+                <%= @inventory.condition %>
+            </ul>
+            
+            <ul>
+                <a><strong>Fabric Type:</strong></a>
+                <%= @inventory.fabric_type %>
+            </ul>
+            
+            <ul>
+                <a><strong>Shipping Weight:</strong></a>
+                <%= @inventory.shipping_weight %>
+            </ul>
+            
+            <ul>
+                <a><strong> Amazon SKU:</strong></a>
+                <%= @inventory.sku %>
+            </ul>
+            
+            <ul>
+                <a><strong>Amazon ASIN:</strong></a>
+                <%= @inventory.asin %>
+            </ul>
+            
+            <ul>
+                <a><strong>Quantity:</strong></a>
+                <%= @inventory.quantity %>
+            </ul>
+            
+            <ul>
+                <a><strong>Cost Price Each:</strong></a>
+                <%= @inventory.cost_price %>
+            </ul>
+            
+            <ul>
+                <a><strong>Selling Price Each:</strong></a>
+                <%= @inventory.sell_price %>
+            </ul>
+            
+            <ul>
+                <a><strong>Key Product Feature:</strong></a>
+                <%= @inventory.key_product_features %>
+            </ul>
+            
+            <ul>
+                <a><strong>Product Description:</strong></a>
+                <%= @inventory.product_description %>
+            </ul>
+            
+            <ul>
+                <a><strong>Search Terms:</strong></a>
+                <%= @inventory.search_terms %>
+            </ul>
+            
+            <ul>
+                <a><strong>Status:</strong></a>
+                <%= @inventory.status %>
+            </ul>
+            
+            <ul>
+                <a><strong>Listed in USA:</strong></a>
+                <%= @inventory.listing_in_usa %>
+            </ul>
+            
+            <ul>
+                <a><strong>Listed in Canada:</strong></a>
+                <%= @inventory.listing_in_canada %>
+            </ul>
+            
+            <ul>
+                <a><strong>Listed in Mexico:</strong></a>
+                <%= @inventory.listing_in_mexico %>
+            </ul>
+            
+            <ul>
+                <%= link_to 'Back', inventories_path %>
+            </ul>
+            
+        </div>
+        <div class = "main1">
+            <%= render @inventory.photos %>
+            <h3>Add a photo:</h3>
+            <%= render 'photos/form' %>
+        </div>
+        
+    </div>
+    
+
+
+</aside>
+    
+
+
+
+

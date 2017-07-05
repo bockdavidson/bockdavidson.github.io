@@ -1,0 +1,180 @@
+<body>
+    <div class = "head">
+        <h1>Vendor Information</h1>
+        <div class = "image1" >
+            <img src= "http://dx.deucex.com/i/logo.png" >
+        </div>
+    </div>
+</body> 
+
+
+
+<aside>
+    
+
+
+<%= render @vendor.fotos %>
+
+<h3>Add a photo:</h3>
+<%= render 'fotos/form' %>
+
+<div class = "vendor_border" >
+    
+<table class = "vendorshow"> 
+    <tr>    
+        <p>
+            <td><strong>Company:</strong></td>
+            <td><%= @vendor.company %></td>
+        </p>
+    </tr>
+    
+    <tr>
+        <td> </td>
+    </tr>
+    <tr>
+        <td> </td>
+    </tr>
+    
+    <tr>
+        <p>
+            <td><strong>Contact Name:</strong></td>
+            <td><%= @vendor.contact_name %></td>
+        </p>
+    </tr>
+    
+    <tr>
+        <td> </td>
+    </tr>
+    <tr>
+        <td> </td>
+    </tr>
+    
+    <tr>
+        <p>
+            <td><strong>Phone:</strong></td>
+            <td><%= @vendor.phone %></td>
+        </p>
+        
+    </tr>
+    
+    <tr>
+        <td> </td>
+    </tr>
+    <tr>
+        <td> </td>
+    </tr>
+    
+    <tr>
+        <p>
+            <td><strong>Email:</strong></td>
+            <td><%= @vendor.email %></td>
+        </p>
+    </tr>
+    
+    <tr>
+        <td> </td>
+    </tr>
+    <tr>
+        <td> </td>
+    </tr>
+    
+    <tr>
+        <p>
+            <td><strong>MOQ:</strong></td>
+            <td><%= @vendor.moq %></td>
+        </p>
+    </tr>
+    
+    <tr>
+        <td> </td>
+    </tr>
+    <tr>
+        <td> </td>
+    </tr>
+    
+    <tr>
+        <p>
+            <td><strong>Cost/Item:</strong></td>
+            <td><%= @vendor.cost_per_item %></td>
+        </p>
+    </tr>
+    
+    <tr>
+        <td> </td>
+    </tr>
+    <tr>
+        <td> </td>
+    </tr>
+    
+    <tr>
+        <p>
+            <td><strong>Payment Method:</strong></td>
+            <td><%= @vendor.payment_method %></td>
+        </p>
+    </tr>
+    
+    <tr>
+        <td> </td>
+    </tr>
+    <tr>
+        <td> </td>
+    </tr>
+    
+    <tr>
+        <p>
+            <td><strong>Terms:</strong></td>
+            <td><%= @vendor.terms %></td>
+        </p>
+    </tr>
+    
+    <tr>
+        <td> </td>
+    </tr>
+    <tr>
+        <td> </td>
+    </tr>
+    
+    <tr>
+        <p>
+            <td><strong>Turnover Peroid: </strong></td>
+            <td><%= @vendor.turnover %></td>
+        </p>
+    </tr>
+    
+    <tr>
+        <td> </td>
+    </tr>
+    <tr>
+        <td> </td>
+    </tr>
+    
+    <tr>
+        <p>
+            <td><strong>Returns:</strong></td>
+            <td><%= @vendor.returns %></td>
+        </p>
+    </tr>
+    
+    <tr>
+        <td> </td>
+    </tr>
+    <tr>
+        <td> </td>
+    </tr>
+    
+    <tr>
+        <p>
+            <td><strong>Notes:</strong></td>
+            <td><%= @vendor.notes %></td>
+        </p>
+    </tr>
+    
+    
+</table>
+
+    
+</div>
+
+<%= link_to 'Back', vendors_path %>
+
+</aside>

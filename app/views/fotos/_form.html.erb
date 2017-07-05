@@ -1,0 +1,9 @@
+<%= form_for([@vendor, @vendor.fotos.build]) do |f| %>
+  <div class="form-group1">
+    <%= f.label :image %>
+    <%= f.file_field :image, class: 'form-control1'%>
+ </div>
+    <p>
+        <%= f.submit 'Upload Photo' %>
+    </p>
+    <% end %>

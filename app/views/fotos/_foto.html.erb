@@ -1,0 +1,15 @@
+<div class="media1">
+  <div class="media-left1">
+    <%= link_to image_tag(foto.image.url, class: 'media-object1'), foto.image.url, target: '_blank' %>
+  </div>
+  <div class="media-body1">
+    <h4 class="media-heading1"><%= foto.title %></h4>
+  </div>
+</div>
+
+
+<p>
+    <%= link_to 'Delete Photo', [foto.vendor, foto],
+                                    method: :delete,
+                                    data: { confirm: 'Are you sure?' } %>
+</p>

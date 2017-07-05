@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Deucex</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class = "auth">
+      <% if !user_signed_in? %>
+        <button class = "signed_in"><%= link_to "Login", new_user_session_path %></button>
+    <% end %>
+    
+    <% if user_signed_in? %>
+        <div class = "buttons">
+          <button class = "button"><%= link_to("Logout", destroy_user_session_path, :method => :delete) %> </button>
+          <button class="button">
+        <%= link_to 'Create a new account', new_account_path %><br />
+      </button>
+        </div>
+    <% end %>
+
+    </div>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <%= yield %>
+  </body>
+</html>
