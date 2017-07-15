@@ -12,12 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20170531172535) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "fotos", force: :cascade do |t|
     t.string "title"
-    t.bigint "vendor_id"
+    t.integer "vendor_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "image_file_name"
@@ -56,7 +53,7 @@ ActiveRecord::Schema.define(version: 20170531172535) do
 
   create_table "photos", force: :cascade do |t|
     t.string "title"
-    t.bigint "inventory_id"
+    t.integer "inventory_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "image_file_name"
@@ -105,14 +102,4 @@ ActiveRecord::Schema.define(version: 20170531172535) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "widgets", id: :serial, force: :cascade do |t|
-    t.string "name"
-    t.text "description"
-    t.integer "stock"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_foreign_key "fotos", "vendors"
-  add_foreign_key "photos", "inventories"
 end
